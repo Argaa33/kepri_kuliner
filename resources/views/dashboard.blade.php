@@ -19,7 +19,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#">SELAMAT DATANG, <?php echo htmlspecialchars($_SESSION['username']); ?>!</a>
+            <a class="navbar-brand text-white" href="#">SELAMAT DATANG!</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
                         <i class="fas fa-envelope-square me-3"></i>
                         <i class="fas fa-bell-slash me-3"></i>
                         <i class="fas fa-user-circle me-3"></i> <!-- Profil User Icon -->
-                        <a href="logout.php"><i class="fas fa-sign-out-alt float-end mt-2" style="color: white;"></i></a>
+                        <a href="#"><i class="fas fa-sign-out-alt float-end mt-2" style="color: white;"></i></a>
                     </div>
                 </div>
             </div>
@@ -41,45 +41,42 @@
         <div class="col-md-2 bg-info mt-2 pt-4">
             <ul class="nav flex-column ms-3 mb-5">
                 <li class="nav-item">
-                    <a class="nav-link active text-white" href="dashboard.php"><i
+                    <a class="nav-link active text-white" href="#"><i
                             class="fas fa-tachometer-alt me-2"></i>Dashboard</a>
                     <hr class="bg-secondary">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="kuliner.php"><i class="fas fa-mortar-pestle me-2"></i>Daftar
+                    <a class="nav-link text-white" href="#"><i class="fas fa-mortar-pestle me-2"></i>Daftar
                         Kuliner</a>
                     <hr class="bg-secondary">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="minuman.php"><i class="fa fa-wine-glass me-2"></i>Daftar
-                        minuman</a>
+                    <a class="nav-link text-white" href="#"><i class="fa fa-wine-glass me-2"></i>Daftar
+                        Minuman</a>
                     <hr class="bg-secondary">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="restoran.php"><i class="fas fa-utensils me-2"></i>Daftar
+                    <a class="nav-link text-white" href="#"><i class="fas fa-utensils me-2"></i>Daftar
                         Restoran</a>
                     <hr class="bg-secondary">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="user.php"><i class="fas fa-users me-2"></i>Daftar User</a>
+                    <a class="nav-link text-white" href="#"><i class="fas fa-users me-2"></i>Daftar User</a>
                     <hr class="bg-secondary">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="kuliner.review.php"><i class="fas fa-magnifying-glass me-2"></i>Daftar
-                        Kuliner
-                        Review</a>
+                    <a class="nav-link text-white" href="#"><i class="fas fa-magnifying-glass me-2"></i>Daftar
+                        Kuliner Review</a>
                     <hr class="bg-secondary">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="minuman.review.php"><i class="fas fa-magnifying-glass me-2"></i>Daftar
-                        Minuman
-                        Review</a>
+                    <a class="nav-link text-white" href="#"><i class="fas fa-magnifying-glass me-2"></i>Daftar
+                        Minuman Review</a>
                     <hr class="bg-secondary">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="resto.review.php"><i class="fas fa-magnifying-glass me-2"></i>Daftar
-                        Restoran
-                        Review</a>
+                    <a class="nav-link text-white" href="#"><i class="fas fa-magnifying-glass me-2"></i>Daftar
+                        Restoran Review</a>
                     <hr class="bg-secondary">
                 </li>
             </ul>
@@ -96,7 +93,7 @@
                     <div class="card bg-primary mb-3">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-mortar-pestle me-2"></i>Kuliner </h5>
-                            <p class="card-text">Total: <?php echo $data['total_kuliner']; ?></p>
+                            <p class="card-text">Total: 0</p>
                         </div>
                     </div>
                 </div>
@@ -104,7 +101,7 @@
                     <div class="card bg-danger mb-3">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fa fa-wine-glass me-2"></i>Minuman</h5>
-                            <p class="card-text">Total: <?php echo $data['total_minuman']; ?></p>
+                            <p class="card-text">Total: 0</p>
                         </div>
                     </div>
                 </div>
@@ -112,7 +109,7 @@
                     <div class="card bg-success mb-3">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-utensils me-2"></i>Restoran</h5>
-                            <p class="card-text">Total: <?php echo $data['total_restoran']; ?></p>
+                            <p class="card-text">Total: 0</p>
                         </div>
                     </div>
                 </div>
@@ -120,7 +117,7 @@
                     <div class="card bg-warning mb-3">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-users me-2"></i>User</h5>
-                            <p class="card-text">Total: <?php echo $data['total_user']; ?></p>
+                            <p class="card-text">Total: 0</p>
                         </div>
                     </div>
                 </div>
@@ -133,3 +130,4 @@
 </body>
 
 </html>
+
