@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/login.css" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Login Page</title>
+    <title>Registrasi Akun</title>
 </head>
 
 <body class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
     <div id="login" class="w-64 h-80 bg-indigo-50 rounded shadow flex flex-col justify-center items-center">       
         <form class="text-indigo-500 justify-center items-center flex" action="" method="post">
             <fieldset class="border-4 border-dotted justify-center items-center border-indigo-500 p-5">
-                <legend class="px-2 italic -mx-2">Welcome again!</legend>
-                <label class="text-xs font-bold after:content-['*'] after:text-red-400" for="email">Mail </label>     
+                <legend class="px-2 italic -mx-2">Registrasi</legend>
+                <label class="text-xs font-bold after:content-['*'] after:text-red-400" for="username">Username </label>     
+                <input class="w-full p-2 mb-2 mt-1 outline-none ring-none focus:ring-2 focus:ring-indigo-500" type="text" required="">   
+                <label class="text-xs font-bold after:content-['*'] after:text-red-400" for="email">Email </label>     
                 <input class="w-full p-2 mb-2 mt-1 outline-none ring-none focus:ring-2 focus:ring-indigo-500" type="email" required="">   
                 <label class="text-xs font-bold after:content-['*'] after:text-red-400" for="password">Password  </label>
                 <input class="w-full p-2 mb-2 mt-1 outline-none ring-none focus:ring-2 focus:ring-indigo-500" type="password" required="">
-                <a href="#" class="block text-right text-xs text-indigo-500 text-center mb-4">Forgot Password?</a>
-                <a href="registration" class="block text-right text-xs text-indigo-500 text-center mb-4">tidak punya akun</a>
-                <button class="w-full rounded bg-indigo-500 text-indigo-50 p-2 text-center font-bold hover:bg-indigo-400">Log In</button>
+                <label class="text-xs font-bold after:content-['*'] after:text-red-400" for="password">Konfirmasi Password  </label>
+                <input class="w-full p-2 mb-2 mt-1 outline-none ring-none focus:ring-2 focus:ring-indigo-500" type="password" required="">
+                <a href="login" class="block text-right text-xs text-indigo-500 text-center mb-4">Sudah punya akun?</a>
+                <button class="w-full rounded bg-indigo-500 text-indigo-50 p-2 text-center font-bold hover:bg-indigo-400">Registrasi</button>
             </fieldset>
         </form>
     </div>
