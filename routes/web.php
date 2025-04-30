@@ -3,12 +3,12 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('index');
+    return view('pages/index');
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('pages/login');
 });
 Route::get ('/dashboard', function () {
-    return view('dashboard');
+    return view('pages/dashboard');
 });
