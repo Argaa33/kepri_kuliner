@@ -7,8 +7,8 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('pages/login');
 });
 Route::get ('/dashboard', function () {
-    return view('dashboard');
+    return view('pages/dashboard');
 });
