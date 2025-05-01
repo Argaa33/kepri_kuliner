@@ -12,11 +12,19 @@ Route::get('/login', function () {
 Route::get ('/dashboard', function () {
     return view('pages/dashboard');
 });
-<<<<<<< HEAD
 Route::get ('/kontak', function () {
     return view('pages/kontak');
-=======
+});
 Route::get ('/registration', function () {
     return view('pages/registration');
->>>>>>> 407459235e5b2a2ef2555b0d0ee6bed4628ce2ec
 });
+Route::get('/kuliner', function () {
+    return view('pages/kuliner');
+});
+Route::view('home/',function () {
+    return view('pages/home');
+});
+Route::view('/order',function () {
+    return view('pages/home');
+});
+

@@ -2,47 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/login.css" type="text/css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Registrasi Akun</title>
+    <title>Login- Kuliner Riau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Flowbite -->
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
 </head>
+<body class="bg-cover bg-center min-h-screen flex items-center justify-center" style="background-image: url('{{ asset('images/barelang.jpg') }}');">
 
-<body class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
-    <div id="login" class="w-64 h-80 bg-indigo-50 rounded shadow flex flex-col justify-center items-center">       
-        <form class="text-indigo-500 justify-center items-center flex" action="" method="post">
-            <fieldset class="border-4 border-dotted justify-center items-center border-indigo-500 p-5">
-                <legend class="px-2 italic -mx-2">Registrasi</legend>
-                <label class="text-xs font-bold after:content-['*'] after:text-red-400" for="username">Username </label>     
-                <input class="w-full p-2 mb-2 mt-1 outline-none ring-none focus:ring-2 focus:ring-indigo-500" type="text" required="">   
-                <label class="text-xs font-bold after:content-['*'] after:text-red-400" for="email">Email </label>     
-                <input class="w-full p-2 mb-2 mt-1 outline-none ring-none focus:ring-2 focus:ring-indigo-500" type="email" required="">   
-                <label class="text-xs font-bold after:content-['*'] after:text-red-400" for="password">Password  </label>
-                <input class="w-full p-2 mb-2 mt-1 outline-none ring-none focus:ring-2 focus:ring-indigo-500" type="password" required="">
-                <label class="text-xs font-bold after:content-['*'] after:text-red-400" for="password">Konfirmasi Password  </label>
-                <input class="w-full p-2 mb-2 mt-1 outline-none ring-none focus:ring-2 focus:ring-indigo-500" type="password" required="">
-                <a href="login" class="block text-right text-xs text-indigo-500 text-center mb-4">Sudah punya akun?</a>
-                <button class="w-full rounded bg-indigo-500 text-indigo-50 p-2 text-center font-bold hover:bg-indigo-400">Registrasi</button>
-            </fieldset>
+    <div class="bg-white bg-opacity-60 backdrop-blur-md rounded-3xl shadow-lg p-10 w-[350px] sm:w-[400px]">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center text-black mb-6">LOGIN TO YOUR<br>ACCOUNT</h2>
+
+        <form method="POST">
+
+            <div class="mb-4">
+                <label for="username" class="block text-sm font-semibold text-gray-800 mb-1">Username :</label>
+                <input type="text" id="username" name="username" required
+                       class="w-full px-4 py-2 rounded-full bg-white bg-opacity-70 text-black placeholder-gray-500 focus:ring focus:ring-blue-300 focus:outline-none">
+            </div>
+
+            <div class="mb-6">
+                <label for="password" class="block text-sm font-semibold text-gray-800 mb-1">Password :</label>
+                <input type="password" id="password" name="password" required
+                       class="w-full px-4 py-2 rounded-full bg-white bg-opacity-70 text-black placeholder-gray-500 focus:ring focus:ring-blue-300 focus:outline-none">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-sm font-semibold text-gray-800 mb-1">Confirm Password :</label>
+                <input type="password" id="password" name="password" required
+                       class="w-full px-4 py-2 rounded-full bg-white bg-opacity-70 text-black placeholder-gray-500 focus:ring focus:ring-blue-300 focus:outline-none">
+            </div>
+            
+            <div class="flex justify-between items-center">
+                <button type="submit"
+                        class="px-6 py-2 bg-gray-300 rounded-full shadow hover:bg-gray-400 transition text-lg font-semibold">
+                    Registrasi
+                </button>
+                <a href="registration" class="text-black hover:underline text-sm">Sign Up?</a>
+            </div>
         </form>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script>
-        const togglePassword = document.querySelector('#togglePassword');
-        const password = document.querySelector('#password');
-        
-        togglePassword.addEventListener('click', function() {
-            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-            password.setAttribute('type', type);
-            this.classList.toggle('fa-eye-slash');
-        });
-    </script>
 </body>
-
 </html>
-

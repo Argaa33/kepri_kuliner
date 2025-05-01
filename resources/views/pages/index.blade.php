@@ -1,190 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Jogfood</title>
-    <!-- favicon-->
-    <link href="images/favicon.jpg" rel="icon">
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="style/flowbite.min.css" />
-    <script src="style/flowbite.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <!-- css file and icons stylesheet-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/custom.css">
-
+  <meta charset="UTF-8">
+  <title>Kuliner Riau</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Flowbite CDN -->
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+  <link href="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.css" rel="stylesheet" />
 </head>
+<body class="bg-[#c9d6e6] font-sans">
 
-<body>
+  <!-- Sidebar -->
+  <div class="flex min-h-screen">
+    <aside class="w-16 bg-[#0e2d66] text-white flex flex-col items-center py-6 space-y-6">
+      <a href="#" data-tooltip-target="tooltip-home">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 10h3v10h14V10h3L12 2z"/></svg>
+      </a>
+      <a href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 
+      3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 
+      22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 
+      11.54L12 21.35z"/></svg></a>
+      <a href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M2 4v16h20V4H2zm2 2h16v12H4V6zm3 2v2h10V8H7z"/></svg></a>
+      <a href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16a4 4 0 100-8 4 4 0 000 8zm8-4a8 8 0 11-16 
+      0 8 8 0 0116 0z"/></svg></a>
+      <a href="#"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 
+      4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 
+      7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 
+      1.6-9.6 4.8V22h19.2v-2.8c0-3.2-6.4-4.8-9.6-4.8z"/></svg></a>
+    </aside>
 
-    <!--========= Start Header=========-->
 
 
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-  </a>
-  <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-      <button type="button" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
-        <span class="sr-only">Open user menu</span>
-        <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo">
-      </button>
-      <!-- Dropdown menu -->
-      <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
-        <div class="px-4 py-3">
-          <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
-          <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
-        </div>
-        <ul class="py-2" aria-labelledby="user-menu-button">
-          <li>
-            <a href="login" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
-          </li>
-          <li>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
-          </li>
-          <li>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
-          </li>
-          <li>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
-          </li>
-        </ul>
+    <!-- Konten -->
+    <main class="flex-1 p-10 relative overflow-hidden">
+      <div class="bg-cover bg-center bg-no-repeat h-80 w-full flex flex-col items-center justify-center" style="background-image: url('images/barelang.jpg');">
+          <h1 class="text-3xl font-bold text-[#44729a] drop-shadow-lg bg-white/70 px-4 py-2 rounded">KULINERIAU</h1>
+          <p class="mt-2 text-lg text-[#44729a] drop-shadow-lg bg-white/70 px-4 py-2 rounded">Selamat datang di Kuliner Riau</p>
       </div>
-      <button data-collapse-toggle="navbar-user" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-user" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
+      <p class="text-xl text-[#5d7a9e] mt-2">Riau Nusantara</p>
+
+      <!-- Ilustrasi Background -->
+      <img src="images/gonggong.png" alt="Kuliner kiri" class="absolute bottom-0 left-20 w-40">
+      <img src="images/laksa.png" alt="Kuliner tengah" class="absolute bottom-0 left-1/3 w-32">
+      <img src="images/otak-otak.jpeg" alt="Kuliner kanan" class="absolute bottom-0 right-10 w-48">
+    </main>
   </div>
-  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
-    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-      <li>
-        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-      </li>
-    </ul>
-  </div>
-  </div>
-</nav>
-<!--End Header-->
 
-    <!--=========Slider section =========-->
+</body>
+<style>
+  img {
+    width: 150px;
+    height: 150px;
+  }
+</style>
+</html>
 
-
-    <div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="images/download.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-    </div>
-    <!-- Slider indicators -->
-    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    </div>
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
-
-
-    <!--Category-->
-    <div class="category-section">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-12">
-                    <h2 style="margin-top: 4%;">Viral Food <a href="viral.php" class="view-more" class="font-poppins"
-                            style="margin-left: 75%;">Lihat lainnya</a></h2>
-                </div>
-            </div>
-            <div class="row">
-    <div class="col-md-4 mb-4">
-        <div class="card">
-            <img src="path/to/image1.jpg" class="card-img-top" alt="Kuliner 1">
-            <h1>Kuliner 1</h1>
-            <p class="description">Deskripsi kuliner 1</p>
-            <p>⭐ Rata-rata Rating: 4.5/5</p>
-            <a href='kuliner.php?id=1&action=show'><button class="btn btn-success btn-sm">Tampilkan</button></a>
-        </div>
-    </div>
-    <div class="col-md-4 mb-4">
-        <div class="card">
-            <img src="path/to/image2.jpg" class="card-img-top" alt="Kuliner 2">
-            <h1>Kuliner 2</h1>
-            <p class="description">Deskripsi kuliner 2</p>
-            <p>⭐ Rata-rata Rating: 4.2/5</p>
-            <a href='kuliner.php?id=2&action=show'><button class="btn btn-success btn-sm">Tampilkan</button></a>
-        </div>
-    </div>
-    <div class="col-md-4 mb-4">
-        <div class="card">
-            <img src="path/to/image3.jpg" class="card-img-top" alt="Kuliner 3">
-            <h1>Kuliner 3</h1>
-            <p class="description">Deskripsi kuliner 3</p>
-            <p>⭐ Rata-rata Rating: 4.0/5</p>
-            <a href='kuliner.php?id=3&action=show'><button class="btn btn-success btn-sm">Tampilkan</button></a>
-        </div>
-    </div>
-</div>
-
-            <div class="category-section">
-                <div class="container">
-                    <div class="row mb-4">
-                        <div class="col-12 mt-5">
-                            <h2 style="margin-top: 4%;">Restoran<a href="restoran.php" class="view-more"
-                                    class="font-poppins" style="margin-left: 75%;">Lihat lainnya</a></h2>
