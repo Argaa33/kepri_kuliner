@@ -52,7 +52,7 @@
                     <div class="text-left text-sm text-gray-500 flex items-center justify-between">
                         <img src="images/laksa.png" alt="Laksa" class="w-20 h-20 rounded-full mx-auto object-cover" />
                         <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="currentColor"><use href="#star" /></svg>4.7</span>
-                        <span class="bg-[#dde6f5] rounded-full px-2 py-0.5 text-xs">55K</span>
+                        <span class="bg-[#dde6f5] rounded-full px-2 py-0.5 text-xs">65K</span>
                     </div>
                     <h3 class="font-bold text-lg mt-2">Laksa</h3>
                     <p class="text-sm text-gray-600">khas Batam</p>

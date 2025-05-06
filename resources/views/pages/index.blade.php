@@ -37,7 +37,7 @@
           <h1 class="text-3xl font-bold text-[#44729a] drop-shadow-lg bg-white/70 px-4 py-2 rounded">KULINERIAU</h1>
           <p class="mt-2 text-lg text-[#44729a] drop-shadow-lg bg-white/70 px-4 py-2 rounded">Selamat datang di Kuliner Riau</p>
       </div>
-      <p class="text-xl text-[#5d7a9e] mt-2">Riau Nusantara</p>
+      <p class="text-xl text-[#5d7a9e] mt-2">Kepri Nusantara</p>
       
 
       <!-- Ilustrasi Background -->
