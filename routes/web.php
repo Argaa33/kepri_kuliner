@@ -27,3 +27,6 @@ Route::get('/order',function () {
 Route::get('/halaman',function () {
     return view('pages/halaman');
 });
+Route::get('/keranjang',function () {
+    return view('pages/keranjang');
+});

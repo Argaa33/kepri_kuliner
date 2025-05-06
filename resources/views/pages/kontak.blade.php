@@ -1,95 +1,102 @@
-    <div class="flex h-screen bg-blue-50">
-    <!-- Sidebar -->
-    <div class="w-16 bg-blue-900 flex flex-col items-center py-6 text-white">
-        <div class="mb-8">
-            <i class="w-6 h-6 icon-home"></i>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KulineRiau - Kontak Kami</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .beach-background {
+            background-image: url('/images/kontak.png');
+            background-size: cover;
+            background-position: center;
+        }
+        
+    </style>
+</head>
+<body class="h-screen overflow-hidden">
+    <div class="flex h-full">
+        <!-- Left Blue Sidebar -->
+        <div class="bg-blue-900 text-white w-16 flex flex-col items-center py-6 h-full z-20">
+            <a href="#" class="mb-8 text-center">
+                <i class="fas fa-home text-xl"></i>
+            </a>
+            <a href="#" class="mb-8 text-center">
+                <i class="far fa-heart text-xl"></i>
+            </a>
+            <a href="#" class="mb-8 text-center">
+                <i class="fas fa-shopping-cart text-xl"></i>
+            </a>
+            <a href="#" class="mb-8 text-center">
+                <i class="far fa-envelope text-xl"></i>
+            </a>
+            <a href="#" class="mb-8 text-center">
+                <i class="far fa-user text-xl"></i>
+            </a>
         </div>
-        <div class="mb-8">
-            <i class="w-6 h-6 icon-heart"></i>
-        </div>
-        <div class="mb-8">
-            <i class="w-6 h-6 icon-shopping-cart"></i>
-        </div>
-        <div class="mb-8">
-            <i class="w-6 h-6 icon-mail"></i>
-        </div>
-        <div class="mb-8">
-            <i class="w-6 h-6 icon-user"></i>
-        </div>
-    </div>
 
-    <div class="flex-1 relative overflow-hidden">
-        <div class="absolute inset-0">
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/70 to-blue-500/30"></div>
-            <div class="h-full w-full bg-cover bg-center" style="background-image: url('/api/placeholder/800/600');"></div>
-        </div>
-
-        <div class="relative z-10 flex flex-col items-center justify-center h-full px-4">
-            <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 w-full max-w-md">
-                <div class="text-center mb-6">
-                    <h1 class="text-4xl font-bold text-blue-900">KulineRiau</h1>
-                    <p class="text-blue-800 text-sm">Cinta Rasa Kuliner Nusantara</p>
+        <!-- Main Content with Beach Background -->
+        <div class="flex-1 beach-background relative">
+            <!-- Semi-transparent overlay covering the whole page -->
+            <div class="absolute inset-0 glass-overlay rounded-l-3xl z-10"></div>
+            
+            <!-- Content Container -->
+            <div class="relative z-20 h-full flex">
+                <!-- Left Side - Brand Information -->
+                <div class="w-1/2 p-10 flex flex-col justify-center">
+                    <h1 class="text-5xl font-bold text-black mb-1">KulineRiau</h1>
+                    <p class="text-black italic text-lg mb-10">Cinta Rasa Kuliner Nusantara</p>
+                    
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center">
+                            <i class="fab fa-facebook-f w-6 text-blue-900"></i>
+                            <span class="ml-2 text-gray-700">@KulineRiau.ppt</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-whatsapp w-6 text-blue-900"></i>
+                            <span class="ml-2 text-gray-700">+62-821-7243-9650</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-instagram w-6 text-blue-900"></i>
+                            <span class="ml-2 text-gray-700">@KulineRiau.ppt</span>
+                        </div>
+                    </div>
+                    
+                    <p class="font-bold text-blue-900">CONTACT US</p>
                 </div>
-
-                <div class="space-y-2 mb-6">
-                    <div class="flex items-center justify-center space-x-2">
-                        <i class="text-blue-900 icon-facebook" style="font-size: 18px;"></i>
-                        <span class="text-sm text-blue-900">KulineRiauRept</span>
+                
+                <!-- Right Side - Contact Form -->
+                <div class="w-1/2 p-10 flex flex-col justify-center">
+                    <div class="mb-6">
+                        <h2 class="text-lg font-semibold text-black mb-2">Ada Pertanyaan? Kirimkan Pesan Anda di Sini!</h2>
                     </div>
-                    <div class="flex items-center justify-center space-x-2">
-                        <i class="text-blue-900 icon-message-circle" style="font-size: 18px;"></i>
-                        <span class="text-sm text-blue-900">+1234-7890-9876</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-2">
-                        <i class="text-blue-900 icon-instagram" style="font-size: 18px;"></i>
-                        <span class="text-sm text-blue-900">@KulineRiauRept</span>
-                    </div>
-                    <div class="text-center text-sm text-blue-900">CONTACT US</div>
-                </div>
-
-                <div class="bg-blue-100/80 rounded-lg p-4">
-                    <h2 class="text-center text-blue-900 mb-3">Ada Pertanyaan? Kirimkan Pesan Anda di Sini!</h2>
-                    <div>
-                        <div class="mb-3">
-                            <label class="block text-sm text-blue-900 mb-1">Nama Anda:</label>
-                            <input 
-                                type="text" 
-                                name="name"
-                                class="w-full px-3 py-2 rounded bg-white/80 border border-blue-200 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                                placeholder="Masukkan Nama"
-                            />
+                    
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nama Anda:</label>
+                            <input type="text" id="name" placeholder="Masukkan Nama" class="w-full px-3 py-2 bg-blue-50 border border-blue-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
-
-                        <div class="mb-3">
-                            <label class="block text-sm text-blue-900 mb-1">E-Mail Anda:</label>
-                            <input 
-                                type="email" 
-                                name="email"
-                                class="w-full px-3 py-2 rounded bg-white/80 border border-blue-200 focus:outline-none focus:ring-1 focus:ring-blue-500"
-                                placeholder="Masukkan Email"
-                            />
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">E-Mail Anda:</label>
+                            <input type="email" id="email" placeholder="Masukkan Email" class="w-full px-3 py-2 bg-blue-50 border border-blue-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
-
-                        <div class="mb-3">
-                            <label class="block text-sm text-blue-900 mb-1">Pesan Anda:</label>
-                            <textarea 
-                                name="message"
-                                class="w-full px-3 py-2 rounded bg-white/80 border border-blue-200 focus:outline-none focus:ring-1 focus:ring-blue-500 h-24"
-                                placeholder="Tulis pesan Anda di sini..."
-                            ></textarea>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Pesan Anda:</label>
+                            <textarea id="message" rows="4" class="w-full px-3 py-2 bg-blue-50 border border-blue-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                         </div>
-
-                        <div class="text-center">
-                            <button 
-                                class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition flex items-center justify-center mx-auto"
-                            >
+                        
+                        <div class="flex justify-end">
+                            <button type="submit" class="px-8 py-2 bg-blue-900 text-white font-medium rounded-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2">
                                 POST
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
+</body>
+</html>
