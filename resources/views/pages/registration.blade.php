@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login- Kuliner Riau</title>
+    <title>Registration - Kuliner Riau</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Flowbite -->
     <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>

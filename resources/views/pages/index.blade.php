@@ -38,11 +38,23 @@
           <p class="mt-2 text-lg text-[#44729a] drop-shadow-lg bg-white/70 px-4 py-2 rounded">Selamat datang di Kuliner Riau</p>
       </div>
       <p class="text-xl text-[#5d7a9e] mt-2">Riau Nusantara</p>
+      
 
       <!-- Ilustrasi Background -->
-      <img src="images/gonggong.png" alt="Kuliner kiri" class="absolute bottom-0 left-20 w-40">
-      <img src="images/laksa.png" alt="Kuliner tengah" class="absolute bottom-0 left-1/3 w-32">
-      <img src="images/otak-otak.jpeg" alt="Kuliner kanan" class="absolute bottom-0 right-10 w-48">
+      <div class="flex flex-col items-start space-y-4">
+        <img src="images/gonggong.png" alt="Kuliner kiri" class="w-40">
+        <p class="text-lg">Gonggong, seafood yang biasa dijadikan sebagai cemilan.</p>
+      </div>
+
+      <div class="flex flex-col items-start space-y-4">
+        <img src="images/laksa.png" alt="Kuliner tengah" class="w-32">
+        <p class="text-lg">Laksa, makanan berkuah yang terbuat dari mie dan campuran bumbu-bumbu.</p>
+      </div>
+
+      <div class="flex flex-col items-start space-y-4">
+        <img src="images/otak-otak.jpeg" alt="Kuliner kanan" class="w-48">
+        <p class="text-lg">Otak-otak, cemilan yang terbuat dari ikan yang digiling dan dibentuk menjadi pipih.</p>
+      </div>
     </main>
   </div>
 

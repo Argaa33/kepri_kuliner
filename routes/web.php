@@ -21,10 +21,9 @@ Route::get ('/registration', function () {
 Route::get('/kuliner', function () {
     return view('pages/kuliner');
 });
-Route::view('home/',function () {
-    return view('pages/home');
+Route::get('/order',function () {
+    return view('pages/order');
 });
-Route::view('/order',function () {
-    return view('pages/home');
+Route::get('/halaman',function () {
+    return view('pages/halaman');
 });
-

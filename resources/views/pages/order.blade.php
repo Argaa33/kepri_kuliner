@@ -1,8 +1,11 @@
 @extends ('layouts.app')
 
-
-
+@section('content')  {{-- Tambahkan jika pakai section --}}
     <div class="flex flex-col items-center justify-center min-h-screen bg-[#c9d9ee] px-4 py-10">
+        ...
+    </div>
+@endsection
+
 
         {{-- Gambar Makanan --}}
         <img src="{{ asset('images/laksa.jpg') }}" alt="Laksa"
@@ -32,5 +35,4 @@
         </div>
 
     </div>
-
-</x-layouts.app>
+extends ('layouts.app')
