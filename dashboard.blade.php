@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Dashboard</title>
-    <style>   sss  hubuhij
+    <style>   
         .nav-link:hover {
             background-color: gold;
             color: white !important;
@@ -93,7 +93,7 @@
                     <div class="card bg-primary mb-3">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-mortar-pestle me-2"></i>Kuliner </h5>
-                            <p class="card-text">Total: 0</p>
+                            <p class="card-text">Total: 100</p>
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                     <div class="card bg-danger mb-3">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fa fa-wine-glass me-2"></i>Minuman</h5>
-                            <p class="card-text">Total: 0</p>
+                            <p class="card-text">Total: 20</p>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                     <div class="card bg-success mb-3">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-utensils me-2"></i>Restoran</h5>
-                            <p class="card-text">Total: 0</p>
+                            <p class="card-text">Total: 6</p>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                     <div class="card bg-warning mb-3">
                         <div class="card-body">
                             <h5 class="card-title"><i class="fas fa-users me-2"></i>User</h5>
-                            <p class="card-text">Total: 0</p>
+                            <p class="card-text">Total: </p>
                         </div>
                     </div>
                 </div>
