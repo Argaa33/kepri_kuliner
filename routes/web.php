@@ -35,3 +35,6 @@ Route::get('/menu',function () {
 Route::get('/change_pass',function () {
     return view('pages/change_pass');
 });
+Route::get('/keranjang',function () {
+    return view('pages/keranjang');
+});
