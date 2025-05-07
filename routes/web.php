@@ -40,7 +40,4 @@ Route::get('/keranjang',function () {
 });
 Route::get('/rating',function () {
     return view('pages/rating');
-})
-Route::get('/verification',function () {
-    return view('pages/verification');
 });
