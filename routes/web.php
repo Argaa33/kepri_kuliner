@@ -32,9 +32,15 @@ Route::get('/halaman',function () {
 Route::get('/menu',function () {
     return view('pages/menu');
 });
+Route::get('/change_pass',function () {
+    return view('pages/change_pass');
+});
 Route::get('/keranjang',function () {
     return view('pages/keranjang');
 });
 Route::get('/rating',function () {
     return view('pages/rating');
+})
+Route::get('/verification',function () {
+    return view('pages/verification');
 });
