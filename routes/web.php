@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
     return view('pages/index');
@@ -12,6 +13,7 @@ Route::get('/login', function () {
     return view('pages/login');
 });
 Route::get ('/dashboard', function () {
+
     return view('pages/dashboard');
 });
 Route::get ('/kontak', function () {
@@ -41,3 +43,10 @@ Route::get('/keranjang',function () {
 Route::get('/rating',function () {
     return view('pages/rating');
 });
+
+    return view('dashboard'); 
+
+Route::get('/about', [App\Http\Controllers\HalamanController::class, 'about']);
+Route::get('/order/{orderId}', [OrderController::class, 'show']);
+
+
