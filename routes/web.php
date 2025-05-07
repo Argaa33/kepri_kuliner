@@ -32,3 +32,6 @@ Route::get('/halaman',function () {
 Route::get('/menu',function () {
     return view('pages/menu');
 });
+Route::get('/change_pass',function () {
+    return view('pages/change_pass');
+});
