@@ -38,3 +38,6 @@ Route::get('/change_pass',function () {
 Route::get('/keranjang',function () {
     return view('pages/keranjang');
 });
+Route::get('/otp_verification',function () {
+    return view('pages/otp_verification');
+});
