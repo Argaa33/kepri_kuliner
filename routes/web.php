@@ -10,11 +10,7 @@ Route::get('/index', function () {
 });
 Route::get('/login', function () {
     return view('pages/login');
-});
-Route::get ('/dashboard', function () {
-    return view('pages/dashboard');
-});
-Route::get ('/kontak', function () {
+});Route::get ('/kontak', function () {
     return view('pages/kontak');
 });
 Route::get ('/registration', function () {
