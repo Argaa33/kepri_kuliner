@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class HalamanController extends Controller
 {
-    public function tentangKami()
+    public function about()
     {
-        return view('tentang-kami'); // Nama file blade: tentang-kami.blade.php
+        return view('about'); // Nama file blade: about.blade.php
     }
 }
