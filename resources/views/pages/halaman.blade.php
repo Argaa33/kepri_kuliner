@@ -47,12 +47,12 @@
         <div>
             <h2 class="text-xl font-bold text-[#1b2a56] mb-4">Popular <span class="text-blue-400">this week</span></h2>
             <div class="grid grid-cols-3 gap-4">
-                <!-- Card Laksa -->
+                <!-- Laksa -->
                 <div class="bg-white p-4 rounded-2xl text-center shadow">
-                    <div class="text-left text-sm text-gray-500 flex items-center justify-between">
-                        <img src="images/laksa.png" alt="Laksa" class="w-20 h-20 rounded-full mx-auto object-cover" />
-                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="currentColor"><use href="#star" /></svg>4.7</span>
-                        <span class="bg-[#dde6f5] rounded-full px-2 py-0.5 text-xs">65K</span>
+                    <img src="images/laksa.png" alt="Laksa" class="w-40 h-40 rounded-full mx-auto object-cover" />
+                    <div class="text-left text-sm text-gray-500 flex items-center justify-between mt-2">
+                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="currentColor"><use href="#star" /></svg>4.8</span>
+                        <span class="bg-[#dde6f5] rounded-full px-2 py-0.5 text-xs">65</span>
                     </div>
                     <h3 class="font-bold text-lg mt-2">Laksa</h3>
                     <p class="text-sm text-gray-600">khas Batam</p>
@@ -60,7 +60,7 @@
 
                 <!-- Otak-Otak -->
                 <div class="bg-orange-100 p-4 rounded-2xl text-center shadow">
-                    <img src="images/otak-otak.jpeg" alt="Otak-Otak" class="w-20 h-20 rounded-full mx-auto object-cover" />
+                    <img src="images/otak-otak.jpeg" alt="Otak-Otak" class="w-40 h-40 rounded-full mx-auto object-cover" />
                     <div class="text-left text-sm text-gray-500 flex items-center justify-between mt-2">
                         <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="currentColor"><use href="#star" /></svg>4.9</span>
                         <span class="bg-[#dde6f5] rounded-full px-2 py-0.5 text-xs">40K</span>
@@ -71,7 +71,7 @@
 
                 <!-- Gonggong -->
                 <div class="bg-white p-4 rounded-2xl text-center shadow">
-                    <img src="images/gonggong.png" alt="Gonggong" class="w-20 h-20 rounded-full mx-auto object-cover" />
+                    <img src="images/gonggong.png" alt="Gonggong" class="w-40 h-40 rounded-full mx-auto object-cover" />
                     <div class="text-left text-sm text-gray-500 flex items-center justify-between mt-2">
                         <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="currentColor"><use href="#star" /></svg>4.8</span>
                         <span class="bg-[#dde6f5] rounded-full px-2 py-0.5 text-xs">80K</span>
