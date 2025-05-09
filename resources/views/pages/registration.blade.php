@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login- Kuliner Riau</title>
+    <title>Registration - Kuliner Riau</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Flowbite -->
     <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
@@ -25,13 +25,18 @@
                 <input type="password" id="password" name="password" required
                        class="w-full px-4 py-2 rounded-full bg-white bg-opacity-70 text-black placeholder-gray-500 focus:ring focus:ring-blue-300 focus:outline-none">
             </div>
-
+            <div class="mb-6">
+                <label for="password" class="block text-sm font-semibold text-gray-800 mb-1">Confirm Password :</label>
+                <input type="password" id="password" name="password" required
+                       class="w-full px-4 py-2 rounded-full bg-white bg-opacity-70 text-black placeholder-gray-500 focus:ring focus:ring-blue-300 focus:outline-none">
+            </div>
+            
             <div class="flex justify-between items-center">
                 <button type="submit"
                         class="px-6 py-2 bg-gray-300 rounded-full shadow hover:bg-gray-400 transition text-lg font-semibold">
-                    Login
+                    Registrasi
                 </button>
-                <a href="registration" class="text-black hover:underline text-sm">Registrasi?</a>
+                <a href="registration" class="text-black hover:underline text-sm">Sign Up?</a>
             </div>
         </form>
     </div>
