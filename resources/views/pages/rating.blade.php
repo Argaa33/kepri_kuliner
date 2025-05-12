@@ -7,10 +7,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/feather-icons"></script>
 </head>
-<body class="bg-yellow-50 font-sans">
+<body class="bg-blue-50 font-sans">
 
   <!-- Header -->
-  <header class="bg-yellow-600 text-white text-center p-4 text-2xl font-bold">
+  <header class="bg-blue-600 text-white text-center p-4 text-2xl font-bold">
     Beri Rating Kuliner Khas Kepri
   </header>
 
@@ -66,7 +66,7 @@
       </div>
 
       <!-- Tombol Submit -->
-      <button type="submit" class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700">
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
         Kirim Rating
       </button>
     </form>
