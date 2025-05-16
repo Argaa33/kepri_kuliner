@@ -156,7 +156,7 @@
     <div class="timeline">
 
       <div class="timeline-item">
-        <img class="order-image" src="https://source.unsplash.com/100x100/?gudeg" alt="Mie tarempa">
+        <img class="order-image" src="c:\Users\TECNO\Pictures\mie tarempa.jpg" alt="Mie tarempa">
         <div class="order-details">
           <div class="order-title">Mie tarempa</div>
           <div class="order-price">Rp25.000</div>
@@ -165,7 +165,7 @@
       </div>
 
       <div class="timeline-item">
-        <img class="order-image" src="https://source.unsplash.com/100x100/?satay" alt="Gonggong">
+        <img class="order-image" src="c:\Users\TECNO\Pictures\gongong.jpg" alt="Gonggong">
         <div class="order-details">
           <div class="order-title">Gonggong</div>
           <div class="order-price">Rp80.000</div>
