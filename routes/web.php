@@ -37,3 +37,6 @@ Route::get('/keranjang',function () {
 Route::get('/rating',function () {
     return view('pages/rating');
 });
+Route::get('/about',function () {
+    return view('pages/about');
+});
