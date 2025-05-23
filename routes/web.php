@@ -11,6 +11,7 @@ Route::get('/index', function () {
 });
 Route::get('/login', function () {
     return view('pages/login');
+
 });Route::get ('/kontak', function () {
     return view('pages/kontak');
 });
@@ -51,4 +52,7 @@ Route::get('/about',function () {
 
 Route::get('/kulineriau',function () {
     return view('pages/kulineriau');
+});
+Route::get('/riwayat',function () {
+    return view('pages/riwayat');
 });
