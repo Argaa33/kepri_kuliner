@@ -11,6 +11,7 @@ Route::get('/index', function () {
 });
 Route::get('/login', function () {
     return view('pages/login');
+
 });Route::get ('/kontak', function () {
     return view('pages/kontak');
 });
@@ -38,6 +39,9 @@ Route::get('/keranjang',function () {
 Route::get('/rating',function () {
     return view('pages/rating');
 });
+Route::get('/about',function () {
+    return view('pages/about');
+});
 Route::get('/dashboard',function () {
     return view('pages/dashboard');
 });
@@ -49,5 +53,6 @@ Route::get('/about',function () {
 Route::get('/kulineriau',function () {
     return view('pages/kulineriau');
 });
-
-
+Route::get('/riwayat',function () {
+    return view('pages/riwayat');
+});
