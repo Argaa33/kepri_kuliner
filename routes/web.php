@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', function () {
     return view('pages/index');
 });
@@ -39,4 +40,15 @@ Route::get('/rating',function () {
 });
 Route::get('/about',function () {
     return view('pages/about');
+});
+Route::get('/dashboard',function () {
+    return view('pages/dashboard');
+});
+    
+Route::get('/about',function () {
+    return view('pages/about');
+});
+
+Route::get('/kulineriau',function () {
+    return view('pages/kulineriau');
 });
