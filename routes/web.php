@@ -18,9 +18,9 @@ Route::get ('/kontak', function () {
     return view('pages/kontak');
 });
 
-Route::get ('/registration', function () {
-    return view('pages/registration');
-});
+Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('/register', [RegisterController::class, 'register']);
+
 
 Route::get ('/kuliner', function () {
     return view('pages/kuliner');

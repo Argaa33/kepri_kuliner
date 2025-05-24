@@ -1,45 +1,75 @@
+<!-- resources/views/register.blade.php -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Registration - Kuliner Riau</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Flowbite -->
-    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('/images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 350px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #102c57;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 25px;
+            background-color: #d3e0f0;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #102c57;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0b1d3a;
+        }
+    </style>
 </head>
-<body class="bg-cover bg-center min-h-screen flex items-center justify-center" style="background-image: url('{{ asset('images/barelang.jpg') }}');">
-
-    <div class="bg-white bg-opacity-60 backdrop-blur-md rounded-3xl shadow-lg p-10 w-[350px] sm:w-[400px]">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center text-black mb-6">LOGIN TO YOUR<br>ACCOUNT</h2>
-
-        <form method="POST">
-
-            <div class="mb-4">
-                <label for="username" class="block text-sm font-semibold text-gray-800 mb-1">Username :</label>
-                <input type="text" id="username" name="username" required
-                       class="w-full px-4 py-2 rounded-full bg-white bg-opacity-70 text-black placeholder-gray-500 focus:ring focus:ring-blue-300 focus:outline-none">
-            </div>
-
-            <div class="mb-6">
-                <label for="password" class="block text-sm font-semibold text-gray-800 mb-1">Password :</label>
-                <input type="password" id="password" name="password" required
-                       class="w-full px-4 py-2 rounded-full bg-white bg-opacity-70 text-black placeholder-gray-500 focus:ring focus:ring-blue-300 focus:outline-none">
-            </div>
-            <div class="mb-6">
-                <label for="password" class="block text-sm font-semibold text-gray-800 mb-1">Confirm Password :</label>
-                <input type="password" id="password" name="password" required
-                       class="w-full px-4 py-2 rounded-full bg-white bg-opacity-70 text-black placeholder-gray-500 focus:ring focus:ring-blue-300 focus:outline-none">
-            </div>
-            
-            <div class="flex justify-between items-center">
-                <button type="submit"
-                        class="px-6 py-2 bg-gray-300 rounded-full shadow hover:bg-gray-400 transition text-lg font-semibold">
-                    Registrasi
-                </button>
-                <a href="registration" class="text-black hover:underline text-sm">Sign Up?</a>
-            </div>
+<body>
+    <div class="container">
+        <h2>REGISTER</h2>
+        <form method="POST" action="{{ route('register') }}">
+            @csrf
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Submit</button>
         </form>
     </div>
-
 </body>
 </html>
