@@ -2,55 +2,72 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - KulineRasa</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <title>Tentang Kami - KulineRiau</title>
     <style>
-        .about-background {
-            background-image: url('/images/tentang-kami.jpeg');
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('{{ asset('storage/background.jpg') }}') no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
+        }
+        header {
+            background-color: #1c1c3f;
+            padding: 15px 30px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .login-button {
+            background: white;
+            color: #1c1c3f;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        .content {
+            max-width: 900px;
+            margin: 60px auto;
+            background: rgba(255,255,255,0.7);
+            padding: 40px;
+            border-radius: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #1c1c1c;
         }
     </style>
 </head>
-<body class="h-screen overflow-hidden">
-    <div class="flex h-full">
-        <!-- Sidebar -->
-        <div class="bg-blue-900 text-white w-16 flex flex-col items-center py-6 h-full z-20">
-            <a href="#" class="mb-8 text-center">
-                <i class="fas fa-home text-xl"></i>
-            </a>
-            <a href="#" class="mb-8 text-center">
-                <i class="far fa-heart text-xl"></i>
-            </a>
-            <a href="#" class="mb-8 text-center">
-                <i class="fas fa-shopping-cart text-xl"></i>
-            </a>
-            <a href="#" class="mb-8 text-center">
-                <i class="far fa-envelope text-xl"></i>
-            </a>
-            <a href="#" class="mb-8 text-center">
-                <i class="far fa-user text-xl"></i>
-            </a>
-        </div>
+<body>
 
-        <!-- Main Content with Background -->
-        <div class="flex-1 about-background relative">
-            <!-- Overlay -->
-            <div class="absolute inset-0 bg-white/30 rounded-l-3xl z-10"></div>
+<header>
+    <div class="logo">KulineRiau</div>
+    <nav>
+        <a href="/index">Home</a>
+        <a href="/menu">Menu</a>
+        <a href="/about">Tentang Kami</a>
+        <a href="/order">Order</a>
+        <a href="/kontak">Kontak</a>
+        <a href="/login" class="login-button">Login</a>
+    </nav>
+</header>
 
-            <!-- Content -->
-            <div class="relative z-20 h-full flex items-center justify-center px-10">
-            <div class="max-w-2xl p-8 bg-white/70 backdrop-blur-sm rounded-md shadow-md">
-                    <p class="mb-6 text-justify text-gray-800 leading-relaxed">
-                        Selamat datang di <strong>KulineRasa</strong>, tempat terbaik untuk mengeksplorasi dan menikmati berbagai sajian kuliner khas Kepulauan Riau! Kami hadir untuk memperkenalkan kelezatan dan kekayaan rasa yang menjadi ciri khas dari daerah yang kaya akan budaya dan tradisi ini.
-                    </p>
-                    <p class="text-justify text-gray-800 leading-relaxed">
-                        Kepulauan Riau, dengan pesona alamnya yang memukau, juga memiliki ragam kuliner yang tak kalah memikat. Dari cita rasa manis, pedas, hingga gurih, setiap hidangan yang kami sajikan menggambarkan kekayaan sejarah dan kebudayaan lokal yang telah turun-temurun dijaga. Kami berkomitmen untuk menyajikan hidangan dengan bahan-bahan pilihan dan resep otentik, yang diolah dengan penuh cinta dan keahlian.
-                    </p>
-                </div>
-            </div>
-        </div>   
+<div class="content">
+    <p>Selamat datang di KulineRasa, tempat terbaik untuk mengeksplorasi dan menikmati berbagai sajian kuliner khas Kepulauan Riau! Kami hadir untuk memperkenalkan kelezatan dan kekayaan rasa yang menjadi ciri khas dari daerah yang kaya akan budaya dan tradisi ini.</p>
+    
+    <p>Kepulauan Riau, dengan pesona alamnya yang memukau, juga memiliki ragam kuliner yang tak kalah memikat. Dari cita rasa manis, pedas, hingga gurih, setiap hidangan yang kami sajikan menggambarkan kekayaan sejarah dan kebudayaan lokal yang telah turun-temurun dijaga. Kami berkomitmen untuk menyajikan hidangan dengan bahan-bahan pilihan dan resep otentik, yang diolah dengan penuh cinta dan keahlian.</p>
+</div>
+
 </body>
 </html>
