@@ -7,7 +7,7 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: url('{{ asset('storage/background.jpg') }}') no-repeat center center fixed;
+            background-image: url('{{ asset('images/tentang-kami.jpeg') }}');
             background-size: cover;
         }
         header {
@@ -59,6 +59,7 @@
         <a href="/about">Tentang Kami</a>
         <a href="/order">Order</a>
         <a href="/kontak">Kontak</a>
+        <a href="/kontak">History</a>
         <a href="/login" class="login-button">Login</a>
     </nav>
 </header>
