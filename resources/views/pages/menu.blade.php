@@ -1,133 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kuliner Batam</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KulineRiau - Nasi Box</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.css" rel="stylesheet" />
     <style>
-        /* Gaya tambahan untuk ikon sidebar (jika diperlukan) */
-        .sidebar-icons a {
-            color: white;
-            text-decoration: none;
-            margin-bottom: 20px; /* Sedikit dikurangi agar pas dengan spacing sebelumnya */
-            font-size: 20px; /* Ukuran ikon disesuaikan */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 30px;
-            height: 30px;
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23D2691E" width="1200" height="800"/><circle fill="%23F4A460" cx="200" cy="200" r="100" opacity="0.3"/><circle fill="%23DEB887" cx="800" cy="400" r="150" opacity="0.2"/></svg>');
+            background-size: cover;
+            background-position: center;
         }
-        .sidebar-icons a:last-child {
-            margin-bottom: 0;
+        
+        .food-image {
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .food-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .nasi-gulai {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23DEB887" width="400" height="300"/><rect fill="%23F4A460" x="50" y="50" width="300" height="200" rx="20"/><circle fill="%23FFD700" cx="200" cy="150" r="60"/><rect fill="%238B4513" x="100" y="200" width="200" height="20" rx="10"/></svg>');
+        }
+        
+        .ikan-bakar {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23CD853F" width="400" height="300"/><ellipse fill="%23DC143C" cx="200" cy="150" rx="120" ry="60"/><circle fill="%23FFD700" cx="150" cy="100" r="20"/><circle fill="%23FFD700" cx="250" cy="100" r="20"/><rect fill="%23228B22" x="50" y="220" width="300" height="30" rx="15"/></svg>');
         }
     </style>
 </head>
-<body class="bg-[#dde6f5] font-sans">
-
-    <nav class="fixed left-0 top-0 h-16 w-full bg-[#0e2c5e] flex items-center justify-center">
-        <ul class="flex space-x-6">
-            <li><a href="#" class="text-white">Home</a></li>
-            <li><a href="#" class="text-white">Favorite</a></li>
-            <li><a href="#" class="text-white">Tentang kami</a></li>
-            <li><a href="#" class="text-white">Message</a></li>
-            <li><a href="#" class="text-white">Profile</a></li>
-        </ul>
-    </nav>
-
-    <main class="ml-16 p-6 space-y-8">
-        <div class="flex justify-between items-center">
-            <div class="relative w-full max-w-md">
-                <input type="text" placeholder="Search by food name / restaurants"
-                    class="w-full py-2 px-10 rounded-full border border-gray-300 focus:outline-none" />
-                <svg class="absolute left-3 top-2.5 w-5 h-5 text-gray-500" fill="none" stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-            </div>
-            <button class="text-lg font-bold px-4 py-2">Menu Lainnya</button>
-        </div>
-
-        <div class="flex items-center bg-white p-6 rounded-xl shadow-md">
-            <div class="text-left">
-                <p class="text-xl font-bold text-[#0e2c5e]">Eksplorasi <span class="text-blue-600">Kuliner Khas Batam dan Kepulauan Riau</span>, Rasakan Lezatnya Hidangan Autentik yang Bikin Ketagihan!</p>
-            </div>
-            <img src="images/chef.png" alt="Chef" class="w-28 ml-auto" />
-        </div>
-
-        <div>
-            <h2 class="text-xl font-bold text-[#1b2a56] mb-4">Terpopuler <span class="text-blue-400">minggu ini</span></h2>
-            <div class="grid grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded-2xl text-center shadow">
-                    <img src="images/laksa.png" alt="Laksa" class="w-40 h-40 rounded-full mx-auto object-cover" />
-                    <div class="text-left text-sm text-gray-500 flex items-center justify-between mt-2">
-                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="currentColor"><use href="#star" /></svg>4.8</span>
-                        <span class="bg-[#dde6f5] rounded-full px-2 py-0.5 text-xs">65</span>
-                    </div>
-                    <h3 class="font-bold text-lg mt-2">Laksa</h3>
-                    <p class="text-sm text-gray-600">khas Batam</p>
-                    <p class="text-sm text-gray-600">Resep:</p>
-                    <ol class="list-disc list-inside text-sm text-gray-600">
-                        <li>1 cup mie beras</li>
-                        <li>1/2 cup minyak sayur</li>
-                        <li>1 bawang bombay, cincang</li>
-                        <li>2 siung bawang putih, cincang</li>
-                        <li>1 pound udang, kupas dan buang kulit</li>
-                        <li>1/2 cup santan</li>
-                        <li>1/2 cup kaldu ayam</li>
-                        <li>1 sendok makan kecap</li>
-                        <li>1 sendok makan saus tiram (opsional)</li>
-                        <li>Garam dan merica secukupnya</li>
-                        <li>Daun ketumbar segar untuk hiasan</li>
-                    </ol>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="hero-bg text-white relative">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold">KulineRiau</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="hover:text-yellow-300 transition-colors">Home</a>
+                    <a href="#" class="hover:text-yellow-300 transition-colors">Menu</a>
+                    <a href="#" class="hover:text-yellow-300 transition-colors">Tentang Kami</a>
+                    <a href="#" class="hover:text-yellow-300 transition-colors">Order</a>
+                    <a href="#" class="hover:text-yellow-300 transition-colors">Kontak</a>
                 </div>
-
-                <div class="bg-orange-100 p-4 rounded-2xl text-center shadow">
-                    <img src="images/ketam.jpeg" alt="Otak-Otak" class="w-40 h-40 rounded-full mx-auto object-cover" />
-                    <div class="text-left text-sm text-gray-500 flex items-center justify-between mt-2">
-                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="currentColor"><use href="#star" /></svg>4.9</span>
-                        <span class="bg-[#dde6f5] rounded-full px-2 py-0.5 text-xs">40K</span>
-                    </div>
-                    <h3 class="font-bold text-lg mt-2">ketam isi</h3>
-                    <p class="text-sm text-gray-600">khas Batam</p>
-                    <p class="text-sm text-gray-600">Resep:</p>
-                    <ol class="list-disc list-inside text-sm text-gray-600">
-                        <li>500 gr daging kepiting</li>
-                        <li>2 siung bawang putih</li>
-                        <li>3 siung bawang merah</li>
-                        <li>2 butir telur</li>
-                        <li>1 sdm tepung roti</li>
-                        <li>garam dan lada</li>
-                        <li>cangkang kepiting buat wadah</li>
-                </div>
-
-                <div class="bg-white p-4 rounded-2xl text-center shadow">
-                    <img src="images/lendir.jpeg" alt="Gonggong" class="w-40 h-40 rounded-full mx-auto object-cover" />
-                    <div class="text-left text-sm text-gray-500 flex items-center justify-between mt-2">
-                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" fill="currentColor"><use href="#star" /></svg>4.8</span>
-                        <span class="bg-[#dde6f5] rounded-full px-2 py-0.5 text-xs">80K</span>
-                    </div>
-                    <h3 class="font-bold text-lg mt-2">mie lendir</h3>
-                    <p class="text-sm text-gray-600">khas Batam</p>
-                    <p class="text-sm text-gray-600">Resep:</p>
-                    <ol class="list-disc list-inside text-sm text-gray-600">
-                        <li>100 gr kacang tanah (digoreng)</li>
-                        <li>2 sdm ubi jalar rebus (untuk pengental)</li>
-                        <li>3 siung bawang putih</li>
-                        <li>3 buah cabai merah</li>
-                        <li>2 sdm kecap manis</li>     
-                        <li>Garam, Gula, Kaldu Bubuk secukupnya</li>
-                        <li>air secukupnya</li>                   
-                    </ol>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
+        </nav>
+        
+        <!-- Hero Content -->
+        <div class="container mx-auto px-6 py-20 text-center">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white/10 backdrop-blur-sm rounded-full p-8 mb-8 inline-block">
+                    <div class="w-32 h-32 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
+                        <span class="text-4xl">🍛</span>
+                    </div>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Cita Rasa Asli Riau</h1>
+                <p class="text-xl md:text-2xl opacity-90">Nikmati kelezatan kuliner tradisional Riau dalam kemasan praktis</p>
+            </div>
         </div>
+    </header>
 
-        <div>
-            <h2 class="text-xl font-bold text-[#1b2a56] mt-6 mb-4">Favourite <span class="text-blue-400">restaurants</span></h2>
-            <div class="flex space-x-4">
-                <div class="bg-white rounded-2xl shadow p-2 flex items-center space-x-2 w-52">
-                    <img src="images/bengkong.png" class="w-12 h-12 rounded-lg" />
-                    <div>
+    <!-- Nasi Box Section -->
+    <section class="py-16 bg-gradient-to-b from-blue-100 to-blue-200">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">Nasi Box</h2>
+                <p class="text-lg md:text-xl text-blue-800 max-w-3xl mx-auto leading-relaxed">
+                    Nasi hangat dan lauk-lauk khas Riau dalam satu kotak! Ini dia rahasia kecil 
+                    yang bikin makan siangmu luar biasa!
+                </p>
+            </div>
+
+            <!-- Food Cards -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Nasi Gulai Tunjang -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="nasi-gulai food-image h-64 relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                                <span class="text-sm font-medium text-gray-800">⭐ Special Menu</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Nasi Gulai Tunjang</h3>
+                        <p class="text-gray-600 mb-4">Kelezatan gulai tunjang khas Riau dengan bumbu rempah tradisional yang menggugah selera</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-orange-600">Rp 25.000</span>
+                            <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ikan Bakar Sambal Tempoyak -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="ikan-bakar food-image h-64 relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                                <span class="text-sm font-medium text-gray-800">🔥 Best Seller</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Ikan Bakar Sambal Tempoyak</h3>
+                        <p class="text-gray-600 mb-4">Ikan bakar segar dengan sambal tempoyak autentik yang pedas dan segar khas Riau</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-orange-600">Rp 30.000</span>
+                            <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Menu Item -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="nasi-gulai food-image h-64 relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="bg-white/90 backdrop-blur-sm rounded-lg p-3">
+                                <span class="text-sm font-medium text-gray-800">🌟 Recommended</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Nasi Rendang Riau</h3>
+                        <p class="text-gray-600 mb-4">Rendang daging empuk dengan citarasa khas Riau yang berbeda dari rendang Padang</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-orange-600">Rp 28.000</span>
+                            <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full transition-colors">
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-12">
+                <button class="bg-blue-900 hover:bg-blue-800 text-white text-xl font-semibold px-12 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    Menu Lengkap
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🚚</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Delivery Cepat</h3>
+                    <p class="text-gray-600">Pesanan diantar dalam 30 menit di area Pekanbaru</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🌿</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Bahan Segar</h3>
+                    <p class="text-gray-600">Menggunakan bahan-bahan segar dan bumbu tradisional asli</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">💝</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Kemasan Praktis</h3>
+                    <p class="text-gray-600">Box ramah lingkungan yang mudah dibawa kemana saja</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4">
+                <h3 class="text-2xl font-bold mb-2">KulineRiau</h3>
+                <p class="text-blue-200">Cita Rasa Asli Riau dalam Setiap Gigitan</p>
+            </div>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-blue-200 hover:text-white transition-colors">Instagram</a>
+                <a href="#" class="text-blue-200 hover:text-white transition-colors">WhatsApp</a>
+                <a href="#" class="text-blue-200 hover:text-white transition-colors">Facebook</a>
+            </div>
+            <p class="text-blue-300 text-sm">&copy; 2024 KulineRiau. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Add order button functionality
+            document.querySelectorAll('button').forEach(button => {
+                if (button.textContent.includes('Pesan')) {
+                    button.addEventListener('click', function() {
+                        alert('Pesanan akan segera diproses! Terima kasih telah memilih KulineRiau.');
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
