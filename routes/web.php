@@ -61,5 +61,6 @@ Route::get ('/about',function () {
 Route::get ('/kulineriau',function () {
     return view('pages/kulineriau');
 });
-
-
+Route::get('/riwayat',function () {
+    return view('pages/riwayat');
+});
