@@ -121,13 +121,13 @@
     <div class="logo"><strong>KulineRiau</strong></div>
     <nav>
         <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">Tentang Kami</a>
-        <a href="#">Order</a>
-        <a href="#">Kontak</a>
-        <a href="#">History</a>
+        <a href="menu">Menu</a>
+        <a href="about">Tentang Kami</a>
+        <a href="order">Order</a>
+        <a href="kontak">Kontak</a>
+        <a href="history">History</a>
     </nav>
-    <button class="login-button">Login</button>
+    <button class="login-button" onclick="window.location.href='login'">Login</button>
 </header>
 
 <div class="search-bar">

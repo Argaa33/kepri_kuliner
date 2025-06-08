@@ -14,7 +14,7 @@
                 </div>
             @endif
 
-            <form method="POST" action="{{ route('kontak.kirim') }}">
+            <form method="POST" action="#">
                 @csrf
 
                 <div class="mb-4">

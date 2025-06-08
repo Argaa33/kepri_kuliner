@@ -42,11 +42,11 @@
             <div class="flex items-center justify-between">
                 <div class="text-2xl font-bold">KulineRiau</div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#" class="hover:text-yellow-300 transition-colors">Home</a>
+                    <a href="index" class="hover:text-yellow-300 transition-colors">Home</a>
                     <a href="#" class="hover:text-yellow-300 transition-colors">Menu</a>
-                    <a href="#" class="hover:text-yellow-300 transition-colors">Tentang Kami</a>
-                    <a href="#" class="hover:text-yellow-300 transition-colors">Order</a>
-                    <a href="#" class="hover:text-yellow-300 transition-colors">Kontak</a>
+                    <a href="about" class="hover:text-yellow-300 transition-colors">Tentang Kami</a>
+                    <a href="order" class="hover:text-yellow-300 transition-colors">Order</a>
+                    <a href="kontak" class="hover:text-yellow-300 transition-colors">Kontak</a>
                 </div>
                 <div class="md:hidden">
                     <button class="text-white focus:outline-none">

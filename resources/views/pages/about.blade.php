@@ -54,13 +54,13 @@
 <header>
     <div class="logo">KulineRiau</div>
     <nav>
-        <a href="/index">Home</a>
-        <a href="/menu">Menu</a>
-        <a href="/about">Tentang Kami</a>
-        <a href="/order">Order</a>
-        <a href="/kontak">Kontak</a>
-        <a href="/kontak">History</a>
-        <a href="/login" class="login-button">Login</a>
+        <a href="index">Home</a>
+        <a href="menu">Menu</a>
+        <a href="#">Tentang Kami</a>
+        <a href="order">Order</a>
+        <a href="kontak">Kontak</a>
+        <a href="history">History</a>
+        <a href="login" class="login-button">Login</a>
     </nav>
 </header>
 
