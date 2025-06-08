@@ -31,7 +31,7 @@
       position: fixed;
       left: 0;
       top: 0;
-    }
+    } 
     .sidebar i {
       color: black;
       font-size: 1.3rem;
